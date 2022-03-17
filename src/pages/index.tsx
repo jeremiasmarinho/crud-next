@@ -1,14 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
     <div className={`
       flex h-screen justify-center items-center
       bg-gradient-to-b from-slate-300 to-slate-600
+      text-slate-900
     `}>
-     <span>Texto</span>
+     <Layout titulo="Cadastro Simples">
+       <span>Conteúdo</span>
+     </Layout>
     </div>
   )
 }
